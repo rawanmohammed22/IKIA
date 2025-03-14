@@ -17,7 +17,7 @@ namespace IKIA.DAL.Prsistance.Data
     {
         #region       DbSet
 
-        public DbSet<Department> Departmentssss { get; set; }
+        public DbSet<Department> Departmen { get; set; }
 
 
 
