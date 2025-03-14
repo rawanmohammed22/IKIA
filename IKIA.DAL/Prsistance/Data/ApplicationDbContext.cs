@@ -3,11 +3,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using IKIA.DAL.Models.Departments;
+using Microsoft.EntityFrameworkCore;
+
+
+
+
 
 
 namespace IKIA.DAL.Prsistance.Data
 {
-    internal class ApplicationDbContext
+    public class ApplicationDbContext:DbContext
     {
+        #region       DbSet
+
+        public DbSet<Department> Departments { get; set; }
+
+
+
+
+
+
+
+
+
+        #endregion
+
     }
 }
